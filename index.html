@@ -1,34 +1,155 @@
 <!doctype html>
 <style>
+    header {
+        color: rgba(0,0,0,0.87);
+        font-size: 13px;
+        line-height: 24px;
+        outline-color: #000000de;
+        text-align: right;
+        width: 100%;
+       
+    }
+
+    .toppur {
+        display: inline;
+        padding-right: 27px;
+    }
+
+    body, html {
+        height: 100%;
+        display: grid;
+        font-size: small;
+        margin: 0;
+    }
+
+    body {
+        display: block;
+    }
+
+    body, td, a, p, .h {
+        font-family: arial, sans-serif;
+        text-decoration: none;
+        color: #5f6368;
+    }
+
+    a:webkit-any-link {
+        cursor: pointer;
+    }
+
+    a:hover {
+        text-decoration:underline;
+
+    }
+
     .searchbar input[type=text] {
-        background-color: transparent;
+        
+        /*background-color: gray;
         border: none;
         margin: 0;
         padding: 0;
         color: rgba(0,0,0,0.87);
         word-wrap: break-word;
-        outline: none;
-        display: flex;
         margin-top: -37px;
         height: 34px;
         font-size: 16px;
+        width: 300px;
+        display: flex;
+        justify-content: center;*/
+
+        
+        
+    }
+    
+    .searchbar:hover {
+        background-color:rgba(201, 199, 199, 0.54)
+    }
+    
+    .logo {
+        height: 92px; 
+        width: 272px;         
+        padding-top: 109px;
+        padding-bottom: 40px;
+        position:
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+
+    }
+
+    center {
+        display: block;
+        text-align: center;
+    }
+
+    .searchbutton {
+        display: flex;
+        padding-top: 50px;
+        justify-content: center;
+        
         
     }
 
-    .logo {
 
+
+    footer {
+        background-color: rgba(201, 199, 199, 0.54);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+        height: 35px;
+        z-index: 104;
+              
     }
 
+    .foot {
+        padding-right: 27px;
+        margin: 1 !important;
+        line-height: -30px;
+        min-width: 980px;
+        
+        display: inline;
+    }
 
 </style>
-<html itemscope itemtype="http://schema.org/WebPage" lang="en-IS">
-    <head></head>
+
+    <head>
+      
+    </head>
         <body>
-            <img class="logo" alt="Google" height="92" id="logo" src=/googlelogo_color_272x92dp.png>
-            <input class="searchbar" maxlength="2048" name="q" type="text">
-            <input class="searchbutton" type="submit">    
-            <input class="feelingluckybutton" type="submit">
-            
+            <header>
+                <ul>
+                    <li class="toppur"><a href="https://www.gmail.com" data-pid="2" target="_top">Gmail</a></li>
+                    <li class="toppur"><a href="https://www.google.is/imghp?hl=en&tab=wi&ogbl" data-pid="2" target="_top">Images</a></li>
+                    <li class="toppur"><a href="https://www.google.is/intl/en/about/products?tab=wh">Gapps</a></li>
+                    <li class="toppur"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/%3Fgws_rd%3Dssl">Sign in</a></li>
+                    
+                </ul>
+            </header>
+            <center>
+                <div class="logo">
+                    <img alt="Google" src=/googlelogo_color_272x92dp.png>
+                </div>
+                <div class="searchbar">
+                    <input type="text">
+                </div>
+                <div class="searchbutton">
+                    <input value="Google Search" type="submit">    
+                    <input value="I'm Feeling Lucky" type="submit">
+                </div>
+            </center>             
+        
+        <footer>
+            <ul>
+                <li class="foot"><a href="https://www.google.com/intl/en_is/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                <li class="foot"><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                <li class="foot"><a href="https://about.google/?utm_source=google-IS&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                <li class="foot"><a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+            </ul>
+        </footer>    
 
 
         </body>
