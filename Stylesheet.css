@@ -126,7 +126,6 @@ body {
 
 
 .searchbar {
-    -webkit-writing-mode: horizontal-tb !important;
     position: relative;
     background-color: transparent;
     border: none;
